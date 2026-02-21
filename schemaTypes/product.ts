@@ -118,6 +118,20 @@ export default defineType({
     }),
 
     defineField({
+      name: 'status',
+      title: 'Status',
+      type: 'string',
+      options: {
+        list: [
+          {title: 'Available', value: 'AVAILABLE'},
+          {title: 'Low Stock', value: 'LOW_STOCK'},
+          {title: 'Out of Stock', value: 'OUT_OF_STOCK'},
+        ],
+      },
+      initialValue: 'AVAILABLE',
+    }),
+
+    defineField({
       name: 'isActive',
       title: 'Active',
       type: 'boolean',
