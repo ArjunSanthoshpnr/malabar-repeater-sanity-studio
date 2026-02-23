@@ -38,6 +38,11 @@ export default defineType({
       },
     }),
     defineField({
+      name: 'imageDescription',
+      title: 'Image Description',
+      type: 'string',
+    }),
+    defineField({
       name: 'bio',
       title: 'Bio',
       type: 'array',
